@@ -46,7 +46,7 @@ body {
 a {
   color: var(--link-color);
   text-decoration: none;
-  color: inhe;
+  transition: all 0.2s ease;
 }
 
 /* Scroll styling */
