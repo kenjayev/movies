@@ -1,0 +1,26 @@
+.ChangeTheme {
+  cursor: pointer;
+  display: inline-block;
+  color: var(--secondary-color);
+  border: 0;
+  background: transparent;
+  width: 24px;
+  height: 28px;
+}
+.ChangeTheme:hover {
+  color: var(--text-color);
+}
+.ChangeTheme:focus {
+  outline: none;
+}
+.ChangeTheme .moon {
+  font-size: 24px;
+  color: #fbc02d;
+}
+.dark-mode-button:active {
+  font-size: 20px;
+}
+
+.dark-mode-button:focus {
+  font-size: 22px;
+}

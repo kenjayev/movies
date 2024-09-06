@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.Header {
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.07);
+  background-color: var(--header-footer-bg); /* Header va footer uchun rang */
+  padding: 1rem 0;
+}
+.header-innerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.header__logo a {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.header__nav-list {
+  display: flex;
+}
+.header__nav-link {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  color: var(--link-color);
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 11px;
+  padding-bottom: 1px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.header__nav-link > i {
+  margin-left: 3px;
+}
+
+.header__nav-link:hover {
+  border-bottom: 2px solid var(--link-hover);
+  color: var(--link-hover);
+}

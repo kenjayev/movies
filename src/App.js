@@ -4,17 +4,20 @@ import React from "react";
 import "./App.css";
 
 // Layouts Import
-import Header from "./layout/Header";
+import Header from "./layout/header/Header";
 import Main from "./layout/Main";
 import Footer from "./layout/Footer";
+import { BrowserRouter } from "react-router-dom";
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <Main />
-        <Footer />
+        <BrowserRouter>
+          <Header />
+          <Main />
+          <Footer />
+        </BrowserRouter>
       </div>
     );
   }
