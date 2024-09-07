@@ -1,0 +1,23 @@
+footer {
+  background-color: var(--header-footer-bg); /* Header va footer uchun rang */
+}
+.page-footer {
+  margin-top: 100px;
+  padding: 25px 0;
+  text-align: center;
+}
+.page-footer h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.page-footer p {
+  font-size: 18px;
+}
+.page-footer p a {
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+}
+.page-footer p a:hover {
+  color: #62aeff;
+  border-bottom: 2px solid #62aeff;
+}

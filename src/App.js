@@ -6,7 +6,7 @@ import "./App.css";
 // Layouts Import
 import Header from "./layout/header/Header";
 import Main from "./layout/Main";
-import Footer from "./layout/Footer";
+import Footer from "./layout/footer/Footer";
 import { BrowserRouter } from "react-router-dom";
 
 class App extends React.Component {
