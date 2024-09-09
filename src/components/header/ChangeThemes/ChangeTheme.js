@@ -19,7 +19,6 @@ class ChangeTheme extends React.Component {
 
   render() {
     const { isDarkMode } = this.state;
-    console.log(isDarkMode);
     return (
       <button className="ChangeTheme" onClick={this.changeTheme}>
         <ion-icon

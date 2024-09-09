@@ -1,0 +1,16 @@
+.moviePages__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.moviePages__header__title {
+  font-size: 27px;
+  letter-spacing: 0.7px;
+}
+.moviePages__list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+  justify-content: center;
+}

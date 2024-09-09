@@ -1,0 +1,48 @@
+/* src/PaginationBar.css */
+.pagination-bar-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination-bar {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination-bar li {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0 5px;
+  background-color: var(--card-background);
+  border: 1px solid #ddd;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.pagination-bar li.active {
+  background-color: #6495ed;
+  color: var(--text-color);
+}
+
+.pagination-bar li.disabled {
+  color: #9d9d9d;
+  cursor: not-allowed;
+}
+
+.pagination-bar li:hover:not(.disabled):not(.active) {
+  background-color: var(--background-color);
+  box-shadow: 0px 2px 15px 1px rgba(256, 256, 256, 0.2);
+}
+.light-mode .pagination-bar li:hover:not(.disabled):not(.active) {
+  box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-bar li.prev,
+.pagination-bar li.next {
+  padding: 8px 16px;
+  color: #6495ed;
+}

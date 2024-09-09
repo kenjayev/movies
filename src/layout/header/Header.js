@@ -25,12 +25,18 @@ class Header extends React.Component {
                   <i className="fa-solid fa-angle-down"></i>
                   <BottomLinks
                     links={[
-                      { name: "Popular", path: "/list/movie?type=popular" },
+                      {
+                        name: "Popular",
+                        path: "/list/movie?type=popular&page=1",
+                      },
                       {
                         name: "Coming soon",
-                        path: "/list/movie?type=upcoming",
+                        path: "/list/movie?type=upcoming&page=1",
                       },
-                      { name: "Favorite", path: "/list/movie?type=top_rated" },
+                      {
+                        name: "Favorite",
+                        path: "/list/movie?type=top_rated&page=1",
+                      },
                     ]}
                   />
                 </button>
@@ -41,12 +47,15 @@ class Header extends React.Component {
                   <i className="fa-solid fa-angle-down"></i>
                   <BottomLinks
                     links={[
-                      { name: "Popular", path: "/list/series?type=popular" },
+                      { name: "Popular", path: "/list/tv?type=popular&page=1" },
                       {
                         name: "Coming soon",
-                        path: "/list/series?type=upcoming",
+                        path: "/list/tv?type=upcoming&page=1",
                       },
-                      { name: "Favorite", path: "/list/series?type=top_rated" },
+                      {
+                        name: "Favorite",
+                        path: "/list/tv?type=top_rated&page=1",
+                      },
                     ]}
                   />
                 </button>
@@ -59,12 +68,12 @@ class Header extends React.Component {
                     links={[
                       {
                         name: "Series",
-                        path: "/list/series?type=popular&genre=16",
+                        path: "/list/tv?type=cartoon&page=1",
                       },
 
                       {
                         name: "Animation movie",
-                        path: "/list/movie?type=popular&genre=16",
+                        path: "/list/movie?type=cartoon&page=1",
                       },
                     ]}
                   />
