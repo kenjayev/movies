@@ -1,0 +1,148 @@
+.MovieInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.backdrop__banner {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  padding: 3rem 0 !important;
+}
+.backdrop__banner .container {
+  max-width: 1420px;
+  display: flex;
+  align-items: start;
+  gap: 50px;
+}
+.poster__box {
+  border-radius: 10px;
+  border: 3px solid var(--scrollbar-thumb);
+  box-shadow: var(--card-shadow);
+}
+.poster__box img {
+  border-radius: 10px;
+  display: block;
+}
+
+/* Movie title */
+.movie__title {
+  font-size: 35px;
+  line-height: 35px;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.movie__title span {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+.movie__original__title {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 16px;
+}
+.movie__original__title span {
+  font-weight: 600;
+}
+
+/* Movie release data and runtime */
+.release__data {
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  gap: 12px;
+}
+.release__data > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.release__data > span > .fa-calendar-days {
+  color: rgb(255, 255, 255);
+}
+.release__data > span > i {
+  color: #50b479cc;
+}
+
+/* Movie Reiting vote average */
+.vote__average__box {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.vote__average__box .fa-star {
+  color: gold;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.vote__count__box {
+  width: 146px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--scrollbar-thumb);
+  border-radius: 6px;
+}
+.vote__count__box > span {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px 8px;
+}
+.vote__count__box .like {
+  padding-left: 13px;
+  padding-right: 13px;
+  color: #2ecc71;
+  border-right: 1px solid var(--scrollbar-thumb);
+}
+.vote__count__box .user {
+  color: #fff;
+  padding-left: 13px;
+  padding-right: 13px;
+  border-left: 1px solid var(--scrollbar-thumb);
+}
+
+.genres {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+.genres span {
+  margin: 0;
+  padding: 5px 20px;
+  background: var(--header-footer-bg);
+  border: 3px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-block;
+  user-select: none;
+}
+.genres span:hover {
+  border: 3px solid var(--scrollbar-thumb);
+  transform: scale(1.003);
+  box-shadow: var(--card-shadow);
+}
+.genres span:active {
+  transform: translateY(2px);
+}
+
+.short__description__box {
+  margin: 20px 0;
+}
+.short__description__box h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.short__description__box i {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+}
+.short__description__box p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}

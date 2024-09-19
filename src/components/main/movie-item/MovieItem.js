@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./MovieItem.css";
 
 class MovieItem extends React.Component {
@@ -9,10 +10,11 @@ class MovieItem extends React.Component {
         {movies &&
           movies.length > 0 &&
           movies.map((movie) => (
-            <div
+            <Link
               className="movies__item"
               key={movie.id}
               ref={this.movieCardRef}
+              to={`/movie/${movie.title || movie.name}?id=${movie.id}`}
             >
               <div className="movies__item__imageBox">
                 <img
@@ -25,7 +27,7 @@ class MovieItem extends React.Component {
                   {movie.title || movie.name}
                 </h3>
               </div>
-            </div>
+            </Link>
           ))}
       </>
     );

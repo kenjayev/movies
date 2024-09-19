@@ -1,4 +1,5 @@
 .movies__item {
+  color: var(--text-color);
   cursor: pointer;
   border-radius: 10px;
   overflow: hidden;

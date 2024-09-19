@@ -1,10 +1,10 @@
-import React from "react";
-import MovieItem from "../movie-item/MovieItem";
 // import PaginationBar from "./pagination/PaginationBar";
 import { useParams } from "react-router-dom";
 // Style
+import React from "react";
 import "./MovieList.css";
-import PaginationList from "./pagination-list/PaginationList";
+import PaginationList from "../../components/main/pagination-list/PaginationList";
+import MovieItem from "../../components/main/movie-item/MovieItem";
 
 // HOC yordamida useParams ni class componentga uzatamiz
 function withRouter(Component) {
@@ -30,8 +30,8 @@ class MovieList extends React.Component {
   pageRequest = () => {
     console.log("Page Request Start");
     const { params } = this.props.params;
-    const query = new URLSearchParams(window.location.search);
 
+    const query = new URLSearchParams(window.location.search);
     const language = query.get("language");
     const page = query.get("page");
     let type = query.get("type");

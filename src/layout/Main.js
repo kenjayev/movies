@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import MovieList from "../components/main/movie-list/MovieList";
+import MovieInfo from "../pages/movie-info/MovieInfo";
+import MovieList from "../pages/movie-list/MovieList";
 
 class Main extends React.Component {
   request = (requestLink) => {
@@ -15,6 +16,10 @@ class Main extends React.Component {
           <Route
             path="/list/:params"
             element={<MovieList request={this.request} />}
+          />
+          <Route
+            path="/movie/:params"
+            element={<MovieInfo request={this.request} />}
           />
         </Routes>
       </main>
